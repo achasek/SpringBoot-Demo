@@ -10,12 +10,14 @@ import lombok.AllArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+// the Entity annotation states that instantiations of this class should persist in the DataBase
 @Entity
 public class Item {
     // convention is private variables, but public constructors so other classes can construct instances of Item
     // lombok handles the public constructor methods tho, so we won't be seeing that here
 
-    // annotation says that ID will be generated upon creation
+    // ID annotation states this as the Primary Key of an entity
+    // GeneratedValue annotation says that ID will be generated upon instantiation of this class
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
