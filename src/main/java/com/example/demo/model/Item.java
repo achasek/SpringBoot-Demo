@@ -17,7 +17,7 @@ public class Item {
     // lombok handles the public constructor methods tho, so we won't be seeing that here
 
     // ID annotation states this as the Primary Key of an entity
-    // GeneratedValue annotation says that ID will be generated upon instantiation of this class
+    // GeneratedValue annotation says that ID will be generated upon instantiation of this class by the DB (h2)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
