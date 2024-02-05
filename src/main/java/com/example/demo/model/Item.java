@@ -26,6 +26,7 @@ public class Item {
     private String description;
     private String category;
     private String image;
+    private String sampleSensitiveInfo;
 
     // however, if we were not using lombok, setter and getters would look like this, and there would be a setter and getter for each key in the entity
 //    public String getName() {
